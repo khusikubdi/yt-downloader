@@ -1,0 +1,49 @@
+<!-- Download Playlist Video Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download YouTube Playlist (Video)</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Download YouTube Playlist (Video)</h1>
+        <input type="text" id="url-input" placeholder="Enter Playlist URL">
+        
+        <label for="file-type">Choose File Type:</label>
+        <select id="file-type">
+            <option value="mp4">MP4</option>
+            <option value="webp">WEBP</option>
+            <option value="mkv">MKV</option>
+        </select>
+        
+        <label for="resolution">Choose Resolution:</label>
+        <select id="resolution">
+            <option value="144p">144p</option>
+            <option value="240p">240p</option>
+            <option value="360p">360p</option>
+            <option value="480p">480p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+            <option value="1440p">1440p</option>
+            <option value="2160p">4K</option>
+        </select>
+        
+        <div id="video-info">
+            <img id="thumbnail" src="" alt="Playlist Thumbnail">
+            <p id="video-title">Playlist Title Appears Here</p>
+            <p id="file-size">Estimated File Size: --</p>
+        </div>
+        
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <button id="download-btn">Download</button>
+    </div>
+
+    <script src="script-playlist-video.js"></script>
+</body>
+</html>

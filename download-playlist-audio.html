@@ -1,0 +1,45 @@
+<!-- Download Playlist Audio Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download YouTube Playlist (Audio)</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Download YouTube Playlist (Audio)</h1>
+        <input type="text" id="url-input" placeholder="Enter Playlist URL">
+        
+        <label for="file-type">Choose File Type:</label>
+        <select id="file-type">
+            <option value="mp3">MP3</option>
+            <option value="wav">WAV</option>
+            <option value="aac">AAC</option>
+        </select>
+        
+        <label for="resolution">Choose Bitrate:</label>
+        <select id="resolution">
+            <option value="128kbps">128kbps</option>
+            <option value="192kbps">192kbps</option>
+            <option value="256kbps">256kbps</option>
+            <option value="320kbps">320kbps</option>
+        </select>
+        
+        <div id="video-info">
+            <img id="thumbnail" src="" alt="Playlist Thumbnail">
+            <p id="video-title">Playlist Title Appears Here</p>
+            <p id="file-size">Estimated File Size: --</p>
+        </div>
+        
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <button id="download-btn">Download</button>
+    </div>
+
+    <script src="script-playlist-audio.js"></script>
+</body>
+</html>
