@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        fetch("https://your-backend.onrender.com/playlist-video-info", {
+        fetch("https://youtube-downloader-backend-8soj.onrender.com/download", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ url: playlistUrl })
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }, 500);
 
-                fetch("https://your-backend.onrender.com/download-playlist-video", {
+                fetch("https://youtube-downloader-backend-8soj.onrender.com/download", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ url: playlistUrl, fileType, resolution })
